@@ -59,10 +59,6 @@ What the ETL Script Does
 
 - Uploads the cleaned dataset to Google Cloud Storage (GCS)
 
-Why Chunking Matters?
-
-Real-world datasets often cannot fit into memory. Chunking is a production-grade technique used by data engineers to process large datasets efficiently.
-
 
 ### Phase 2: Google Cloud Storage (GCS)
 
@@ -260,10 +256,12 @@ This project mirrors real analytics workflows used in industry:
 
 - Iterative understanding
 
-My goal was not perfect charts, but demonstrating the ability to:
+My goal for this project was not perfect charts, but demonstrating the ability to:
 
 - Move data through a pipeline
 
 - Ask meaningful questions
 
 - Interpret aggregated results correctly
+
+- Gain relevant experience 
