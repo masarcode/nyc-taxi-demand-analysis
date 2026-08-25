@@ -1,267 +1,160 @@
-# nyc-taxi-demand-analysis
-
-NYC Yellow Taxi Data Pipeline & Demand Analysis
-
-I built this project to analyze New York City Yellow Taxi trip data to understand demand patterns, pricing behavior, and trip characteristics.
-The project demonstrates an end-to-end data pipeline, starting from raw data ingestion and cleaning, through cloud storage and querying, and ending with an interactive business intelligence dashboard.
-
-The pipeline follows this flow:
-
-Raw Data → Python ETL → Google Cloud Storage → BigQuery → Google Looker Studio BI Dashboard
-
-### Dataset Description:
-
-Each row in the dataset represents one taxi trip and contains information such as:
-
-- Pickup and drop off locations
-
-- Trip distance
-
-- Trip duration
-
-- Fare and total cost
-
-- Payment method
-
-- Fees and surcharges
-
-Because NYC processes millions of taxi trips per month, this project works with very large-scale data, which is why many of the aggregated values appear large.
-
-
-### Phase 1: Python ETL (Extract, Transform, Load)
-Purpose
-
-The raw taxi data is too large to process in memory at once, so it must be processed in chunks.
-
-What the ETL Script Does
-
-1. Extract
-
-- Reads the raw CSV taxi data in chunks
-
-- Prevents memory overload
-
-2. Transform
-
-- Removes invalid records (e.g., negative distances, zero fares)
-
-- Converts timestamps into usable datetime formats
-
-- Calculates new derived fields:
-
-  - trip_duration (minutes)
-
-  - Ensures numeric columns are valid
-
-3. Load
-
-- Writes cleaned chunks to a new CSV
-
-- Uploads the cleaned dataset to Google Cloud Storage (GCS)
-
-
-### Phase 2: Google Cloud Storage (GCS)
-
-The cleaned dataset is uploaded to Google Cloud Storage, which acts as a staging layer between Python and BigQuery.
-
-Why this step matters:
-
-- Separates compute (Python) from storage
-
-- Allows BigQuery to load data efficiently
-
-- Mirrors real-world cloud data pipelines
-
-### Phase 3: BigQuery Data Warehouse
-Table Creation
-
-The cleaned data is loaded into BigQuery as a structured table.
-
-Schema Overview
-
-Key fields include:
-
-- PULocationID – Pickup zone ID
-
-- DOLocationID – Dropoff zone ID
-
-- trip_distance – Distance traveled (miles)
-
-- fare_amount – Base fare
-
-- total_amount – Final cost paid (fare + tips + fees)
-
-- trip_duration – Duration in minutes
-
-BigQuery allows fast aggregation and analytics over millions of rows.
-
-### Phase 4: SQL Analysis (queries.sql)
-
-SQL was used to:
-
-- Validate data integrity
-
-- Compute summary statistics
-
-- Prepare data for visualization
-
-Example analyses:
-
-- Average trip cost
-
-- Trip counts per pickup zone
-
-- Relationship between distance and fare
-
-These queries power the BI dashboard.
-
-### Phase 5: Visualization & Analysis (Dashboard)
-
-The final dashboard answers three core business questions.
-
-### 1. Average Trip Cost (Scorecard)
-
-Metric:
-AVG(total_amount) = 29.71 USD
-
-What this means:
-
-- On average, a NYC yellow taxi passenger pays $29.71 per trip
-
-This includes:
-
-- Base fare
-
-- Tips
-
-- Tolls
-
-- Congestion and airport fees
-
-Why this matters:
-
-- Gives a clear benchmark for pricing
-
-- Useful for cost-of-living, demand, and revenue analysis
-
-### 2. Busiest Pickup Zones (Bar Chart)
-
-X-axis:
-PULocationID (pickup zone identifier)
-
-Y-axis:
-Record Count (number of trips)
-
-What this chart shows:
-
-- The top pickup zones by number of taxi trips
-
-- Each bar represents how many rides started in that zone
-
-Important clarification:
-
-- These numbers are counts of trips, not dollars or miles
-
-- Large values (100,000+) are expected because the dataset contains hundreds of thousands of trips
-
-Business insight:
-
-- Taxi demand in NYC is highly concentrated
-
-- A small number of zones generate a disproportionate share of rides
-
-- These areas are critical for:
-
-  - Traffic planning
-
-  - Pricing strategies
-
-  - Fleet allocation
-
-### 3. Trip Distance vs Fare Amount (Scatter Plot)
-
-X-axis:
-trip_distance (aggregated)
-
-Y-axis:
-fare_amount (aggregated)
-
-What each point represents:
-
-- A group of trips aggregated together
-
-- Not a single taxi ride
-
-Why the numbers look large:
-
-- The chart displays summed values across many trips
-
-For example:
-
-- A value of 2,000,000 on the x-axis does not mean one trip traveled 2M miles
-
-- It means many trips at that distance range combined
-
-Key takeaway:
-
-- There is a strong positive relationship between distance and fare
-
-- Confirms that NYC taxi pricing scales predictably with distance
-
-### Why outliers exist:
-
-- Extreme trips
-
-- Data aggregation
-
-- No heavy filtering applied (intentional for exploratory analysis)
-
-### Key Insights Summary
-
-- Average NYC taxi trip costs = $29.71
-
-- Taxi demand is concentrated in a small number of pickup zones
-
-- Fare pricing increases consistently with trip distance
-
-- Raw data must be cleaned and validated before analysis
-
-- Cloud data warehouses enable fast analytics at scale
-
-### Skills Demonstrated
-
-- Python data processing (ETL, chunking)
-
-- Data cleaning and validation
-
-- Cloud storage (Google Cloud Storage)
-
-- SQL analytics (BigQuery)
-
-- Business intelligence & visualization
-
-- Exploratory data analysis
-
-- Communicating insights from large datasets
-
-### Notes on Real World Relevance
-
-This project mirrors real analytics workflows used in industry:
-
-- Large datasets
-
-- Imperfect data
-
-- Confusing intermediate results
-
-- Iterative understanding
-
-My goal for this project was not perfect charts, but demonstrating the ability to:
-
-- Move data through a pipeline
-
-- Ask meaningful questions
-
-- Interpret aggregated results correctly
-
-- Gain relevant experience 
+# NYC Yellow Taxi Demand & Reporting Pipeline
+
+[![Tests](https://github.com/masarcode/nyc-taxi-demand-analysis/actions/workflows/tests.yml/badge.svg)](https://github.com/masarcode/nyc-taxi-demand-analysis/actions/workflows/tests.yml)
+
+**When and where is Yellow Taxi demand concentrated, and how can a large trip
+dataset be converted into reliable operational reporting?**
+
+This project processes **24,083,384 official NYC Taxi & Limousine Commission
+trip records** from January through June 2025. A row-group Python ETL pipeline
+validates the trips without loading the full dataset into memory, retains
+**21,810,780 accepted records**, and produces eight analysis-ready reporting
+tables for BigQuery or another BI layer.
+
+![NYC Yellow Taxi portfolio dashboard](outputs/figures/portfolio_dashboard.svg)
+
+## Executive findings
+
+- **May had the highest accepted volume:** 4,054,716 trips.
+- **Evening demand is consistently important:** Thursday at 6 p.m. was the
+  largest recurring weekday-hour combination, with 246,805 accepted trips.
+- **Upper East Side South led pickup volume:** 997,406 accepted pickups,
+  followed by Midtown Center at 985,871.
+- **The leading high-volume route was local:** Upper East Side South to Upper
+  East Side North recorded 146,707 trips, averaging 7.28 minutes and $15.72 in
+  total charges.
+- Accepted trips represented **$613.2 million in gross booking value**, with
+  an average `total_amount` of **$28.11**. Gross booking value is not profit or
+  net operator revenue.
+
+These patterns support concentrating fleet availability around high-volume
+Manhattan zones and evening demand windows, while airport zones remain
+important distinct operating markets. The results describe completed rides;
+they do not measure unserved demand or prove that repositioning alone would
+increase revenue.
+
+## Pipeline design
+
+```mermaid
+flowchart LR
+    A["Six TLC Parquet partitions"] --> B["Row-group Python ETL"]
+    B --> C["Validation and enrichment"]
+    C --> D["Eight reporting tables"]
+    D --> E["BigQuery or BI dashboard"]
+```
+
+The original prototype failed while appending Parquet row groups whose inferred
+integer types differed. The repaired pipeline supplies a canonical Arrow
+schema and can optionally write stable cleaned monthly partitions.
+
+## Data-quality results
+
+| Measure | Result |
+| --- | ---: |
+| Raw trip records | 24,083,384 |
+| Accepted trips | 21,810,780 |
+| Rejected trips | 2,272,604 |
+| Acceptance rate | 90.56% |
+| Reporting tables | 8 |
+
+Each rejected row is assigned exactly one first-failing reason. The largest
+categories were invalid or nonpositive fares, invalid distances, and invalid
+durations. Complete month-level counts are preserved in
+[`data_quality_summary.csv`](outputs/tables/data_quality_summary.csv).
+
+## Reporting model
+
+The pipeline creates:
+
+1. `monthly_summary`
+2. `daily_demand`
+3. `hourly_demand`
+4. `pickup_zone_summary`
+5. `route_summary`
+6. `distance_band_summary`
+7. `payment_summary`
+8. `data_quality_summary`
+
+See the [data dictionary](docs/data_dictionary.md) for table grain and metric
+definitions. The optional BigQuery loader creates these as eight native tables
+using Google Application Default Credentials; no credential files belong in
+the repository.
+
+## Reproduce the analysis
+
+Create a Python 3.11+ environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Download the configured TLC partitions and taxi-zone lookup:
+
+```bash
+python scripts/download_data.py
+```
+
+Run the row-group pipeline:
+
+```bash
+python -m nyc_taxi_pipeline.pipeline \
+  data/raw/yellow_tripdata_2025-0[1-6].parquet \
+  --zone-lookup data/raw/taxi_zone_lookup.csv \
+  --output-dir outputs/tables
+```
+
+Regenerate the dashboard preview:
+
+```bash
+python scripts/render_dashboard.py
+```
+
+Run the tests:
+
+```bash
+python -m pytest tests -q
+```
+
+To load the eight generated tables into BigQuery, install the cloud extra and
+use your own project and dataset:
+
+```bash
+python -m pip install -r requirements-cloud.txt
+python scripts/load_bigquery.py --project YOUR_PROJECT_ID --dataset taxi_reporting
+```
+
+## Repository structure
+
+```text
+config/                  source partitions and pipeline configuration
+data/raw/                downloaded TLC files; excluded from Git
+docs/                    methodology, limitations, and data dictionary
+outputs/figures/         reproducible portfolio dashboard
+outputs/tables/          eight analysis-ready reporting tables
+scripts/                 acquisition, BigQuery loading, and visualization
+sql/                     documented business queries
+src/nyc_taxi_pipeline/   row-group cleaning and aggregation pipeline
+tests/                   schema, validation, and output tests
+```
+
+## Sources
+
+- [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+- [Yellow Taxi January 2025 Parquet](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet)
+- [NYC TLC Taxi Zone Lookup](https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv)
+- [Source manifest with verified partition row counts](docs/source_manifest.csv)
+- [Methodology and limitations](docs/methodology.md)
+
+## Tech stack
+
+**Python, pandas, NumPy, PyArrow, Parquet, SQL, BigQuery, SVG, pytest,
+GitHub Actions**
+
+## Scope note
+
+This is an independent portfolio analysis using public data. It is not
+affiliated with the NYC Taxi & Limousine Commission. The committed aggregate
+tables can be reproduced from the public monthly files; raw trip data is not
+duplicated in this repository.

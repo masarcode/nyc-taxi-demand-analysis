@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#f8fafc"/>
+<style>text{font-family:Inter,Arial,sans-serif} .panel{fill:#fff;stroke:#e2e8f0;stroke-width:1}</style>
+<text x="60.0" y="62.0" font-size="30" fill="#0f172a" font-weight="700" text-anchor="start">NYC Yellow Taxi Demand &amp; Revenue</text>
+<text x="60.0" y="91.0" font-size="15" fill="#475569" font-weight="400" text-anchor="start">January-June 2025 | Validated reporting outputs from 24.1M raw trips</text>
+<rect class="panel" x="60" y="125" width="650" height="320" rx="12"/>
+<rect class="panel" x="735" y="125" width="605" height="320" rx="12"/>
+<rect class="panel" x="60" y="470" width="650" height="360" rx="12"/>
+<rect class="panel" x="735" y="470" width="605" height="360" rx="12"/>
+<text x="88.0" y="163.0" font-size="18" fill="#0f172a" font-weight="700" text-anchor="start">Accepted trips by month</text>
+<text x="765.0" y="163.0" font-size="18" fill="#0f172a" font-weight="700" text-anchor="start">Pipeline summary</text>
+<text x="88.0" y="508.0" font-size="18" fill="#0f172a" font-weight="700" text-anchor="start">Top pickup zones</text>
+<text x="765.0" y="508.0" font-size="18" fill="#0f172a" font-weight="700" text-anchor="start">Demand by weekday and hour</text>
+<line x1="110" y1="385.0" x2="675" y2="385.0" stroke="#dbe4ef"/>
+<text x="98.0" y="390.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">0</text>
+<line x1="110" y1="337.5" x2="675" y2="337.5" stroke="#dbe4ef"/>
+<text x="98.0" y="342.5" font-size="11" fill="#475569" font-weight="400" text-anchor="end">1.1M</text>
+<line x1="110" y1="290.0" x2="675" y2="290.0" stroke="#dbe4ef"/>
+<text x="98.0" y="295.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">2.3M</text>
+<line x1="110" y1="242.5" x2="675" y2="242.5" stroke="#dbe4ef"/>
+<text x="98.0" y="247.5" font-size="11" fill="#475569" font-weight="400" text-anchor="end">3.4M</text>
+<line x1="110" y1="195.0" x2="675" y2="195.0" stroke="#dbe4ef"/>
+<text x="98.0" y="200.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">4.5M</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="4" points="110.0,250.4 223.0,248.0 336.0,226.3 449.0,232.8 562.0,215.4 675.0,224.6"/>
+<circle cx="110.0" cy="250.4" r="6" fill="#2563eb"/>
+<text x="110.0" y="237.4" font-size="11" fill="#0f172a" font-weight="600" text-anchor="middle">3.2M</text>
+<text x="110.0" y="413.0" font-size="11" fill="#475569" font-weight="400" text-anchor="middle">2025-01</text>
+<circle cx="223.0" cy="248.0" r="6" fill="#2563eb"/>
+<text x="223.0" y="235.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="middle">3.3M</text>
+<text x="223.0" y="413.0" font-size="11" fill="#475569" font-weight="400" text-anchor="middle">2025-02</text>
+<circle cx="336.0" cy="226.3" r="6" fill="#2563eb"/>
+<text x="336.0" y="213.3" font-size="11" fill="#0f172a" font-weight="600" text-anchor="middle">3.8M</text>
+<text x="336.0" y="413.0" font-size="11" fill="#475569" font-weight="400" text-anchor="middle">2025-03</text>
+<circle cx="449.0" cy="232.8" r="6" fill="#2563eb"/>
+<text x="449.0" y="219.8" font-size="11" fill="#0f172a" font-weight="600" text-anchor="middle">3.6M</text>
+<text x="449.0" y="413.0" font-size="11" fill="#475569" font-weight="400" text-anchor="middle">2025-04</text>
+<circle cx="562.0" cy="215.4" r="6" fill="#2563eb"/>
+<text x="562.0" y="202.4" font-size="11" fill="#0f172a" font-weight="600" text-anchor="middle">4.1M</text>
+<text x="562.0" y="413.0" font-size="11" fill="#475569" font-weight="400" text-anchor="middle">2025-05</text>
+<circle cx="675.0" cy="224.6" r="6" fill="#2563eb"/>
+<text x="675.0" y="211.6" font-size="11" fill="#0f172a" font-weight="600" text-anchor="middle">3.8M</text>
+<text x="675.0" y="413.0" font-size="11" fill="#475569" font-weight="400" text-anchor="middle">2025-06</text>
+<text x="775.0" y="225.0" font-size="12" fill="#475569" font-weight="700" text-anchor="start">RAW RECORDS</text>
+<text x="775.0" y="268.0" font-size="34" fill="#0f172a" font-weight="700" text-anchor="start">24.1M</text>
+<text x="1055.0" y="225.0" font-size="12" fill="#475569" font-weight="700" text-anchor="start">ACCEPTED TRIPS</text>
+<text x="1055.0" y="268.0" font-size="34" fill="#0f172a" font-weight="700" text-anchor="start">21.8M</text>
+<text x="775.0" y="340.0" font-size="12" fill="#475569" font-weight="700" text-anchor="start">GROSS BOOKING VALUE</text>
+<text x="775.0" y="383.0" font-size="34" fill="#0f172a" font-weight="700" text-anchor="start">$613.2M</text>
+<text x="1055.0" y="340.0" font-size="12" fill="#475569" font-weight="700" text-anchor="start">AVERAGE TOTAL</text>
+<text x="1055.0" y="383.0" font-size="34" fill="#0f172a" font-weight="700" text-anchor="start">$28.11</text>
+<text x="278.0" y="557.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Union Sq</text>
+<rect x="290" y="540" width="219.2" height="24" rx="3" fill="#2563eb"/>
+<text x="517.2" y="557.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">598.9K</text>
+<text x="278.0" y="584.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">LaGuardia Airport</text>
+<rect x="290" y="567" width="219.6" height="24" rx="3" fill="#2563eb"/>
+<text x="517.6" y="584.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">600.1K</text>
+<text x="278.0" y="611.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Lincoln Square East</text>
+<rect x="290" y="594" width="237.4" height="24" rx="3" fill="#2563eb"/>
+<text x="535.4" y="611.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">648.7K</text>
+<text x="278.0" y="638.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Midtown East</text>
+<rect x="290" y="621" width="255.4" height="24" rx="3" fill="#2563eb"/>
+<text x="553.4" y="638.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">698.0K</text>
+<text x="278.0" y="665.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Penn Station/Madison Sq West</text>
+<rect x="290" y="648" width="257.1" height="24" rx="3" fill="#2563eb"/>
+<text x="555.1" y="665.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">702.6K</text>
+<text x="278.0" y="692.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Times Sq/Theatre District</text>
+<rect x="290" y="675" width="261.1" height="24" rx="3" fill="#2563eb"/>
+<text x="559.1" y="692.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">713.6K</text>
+<text x="278.0" y="719.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">JFK Airport</text>
+<rect x="290" y="702" width="321.1" height="24" rx="3" fill="#2563eb"/>
+<text x="619.1" y="719.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">877.5K</text>
+<text x="278.0" y="746.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Upper East Side North</text>
+<rect x="290" y="729" width="326.3" height="24" rx="3" fill="#2563eb"/>
+<text x="624.3" y="746.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">891.6K</text>
+<text x="278.0" y="773.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Midtown Center</text>
+<rect x="290" y="756" width="360.8" height="24" rx="3" fill="#2563eb"/>
+<text x="658.8" y="773.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">985.9K</text>
+<text x="278.0" y="800.0" font-size="12" fill="#475569" font-weight="400" text-anchor="end">Upper East Side South</text>
+<rect x="290" y="783" width="365.0" height="24" rx="3" fill="#2563eb"/>
+<text x="663.0" y="800.0" font-size="11" fill="#0f172a" font-weight="600" text-anchor="start">997.4K</text>
+<text x="835.0" y="569.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">Monday</text>
+<rect x="850" y="548" width="18" height="32" fill="rgb(202,214,241)"/>
+<rect x="868" y="548" width="18" height="32" fill="rgb(223,232,249)"/>
+<rect x="886" y="548" width="18" height="32" fill="rgb(233,240,253)"/>
+<rect x="904" y="548" width="18" height="32" fill="rgb(236,243,254)"/>
+<rect x="922" y="548" width="18" height="32" fill="rgb(233,240,253)"/>
+<rect x="940" y="548" width="18" height="32" fill="rgb(224,233,249)"/>
+<rect x="958" y="548" width="18" height="32" fill="rgb(199,211,240)"/>
+<rect x="976" y="548" width="18" height="32" fill="rgb(158,175,224)"/>
+<rect x="994" y="548" width="18" height="32" fill="rgb(129,150,213)"/>
+<rect x="1012" y="548" width="18" height="32" fill="rgb(132,153,214)"/>
+<rect x="1030" y="548" width="18" height="32" fill="rgb(134,155,215)"/>
+<rect x="1048" y="548" width="18" height="32" fill="rgb(131,152,214)"/>
+<rect x="1066" y="548" width="18" height="32" fill="rgb(121,143,210)"/>
+<rect x="1084" y="548" width="18" height="32" fill="rgb(116,139,208)"/>
+<rect x="1102" y="548" width="18" height="32" fill="rgb(104,128,203)"/>
+<rect x="1120" y="548" width="18" height="32" fill="rgb(97,122,201)"/>
+<rect x="1138" y="548" width="18" height="32" fill="rgb(102,127,203)"/>
+<rect x="1156" y="548" width="18" height="32" fill="rgb(86,113,196)"/>
+<rect x="1174" y="548" width="18" height="32" fill="rgb(84,111,195)"/>
+<rect x="1192" y="548" width="18" height="32" fill="rgb(112,135,206)"/>
+<rect x="1210" y="548" width="18" height="32" fill="rgb(115,138,208)"/>
+<rect x="1228" y="548" width="18" height="32" fill="rgb(114,137,207)"/>
+<rect x="1246" y="548" width="18" height="32" fill="rgb(138,158,216)"/>
+<rect x="1264" y="548" width="18" height="32" fill="rgb(179,194,232)"/>
+<text x="835.0" y="601.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">Tuesday</text>
+<rect x="850" y="580" width="18" height="32" fill="rgb(210,221,244)"/>
+<rect x="868" y="580" width="18" height="32" fill="rgb(228,237,251)"/>
+<rect x="886" y="580" width="18" height="32" fill="rgb(236,244,254)"/>
+<rect x="904" y="580" width="18" height="32" fill="rgb(239,246,255)"/>
+<rect x="922" y="580" width="18" height="32" fill="rgb(237,244,254)"/>
+<rect x="940" y="580" width="18" height="32" fill="rgb(227,236,250)"/>
+<rect x="958" y="580" width="18" height="32" fill="rgb(199,211,240)"/>
+<rect x="976" y="580" width="18" height="32" fill="rgb(149,168,221)"/>
+<rect x="994" y="580" width="18" height="32" fill="rgb(113,136,207)"/>
+<rect x="1012" y="580" width="18" height="32" fill="rgb(116,139,208)"/>
+<rect x="1030" y="580" width="18" height="32" fill="rgb(123,145,211)"/>
+<rect x="1048" y="580" width="18" height="32" fill="rgb(122,144,210)"/>
+<rect x="1066" y="580" width="18" height="32" fill="rgb(115,138,207)"/>
+<rect x="1084" y="580" width="18" height="32" fill="rgb(110,134,206)"/>
+<rect x="1102" y="580" width="18" height="32" fill="rgb(96,121,200)"/>
+<rect x="1120" y="580" width="18" height="32" fill="rgb(88,114,197)"/>
+<rect x="1138" y="580" width="18" height="32" fill="rgb(92,118,199)"/>
+<rect x="1156" y="580" width="18" height="32" fill="rgb(68,97,190)"/>
+<rect x="1174" y="580" width="18" height="32" fill="rgb(59,89,186)"/>
+<rect x="1192" y="580" width="18" height="32" fill="rgb(89,116,198)"/>
+<rect x="1210" y="580" width="18" height="32" fill="rgb(80,107,194)"/>
+<rect x="1228" y="580" width="18" height="32" fill="rgb(65,94,188)"/>
+<rect x="1246" y="580" width="18" height="32" fill="rgb(100,125,202)"/>
+<rect x="1264" y="580" width="18" height="32" fill="rgb(164,181,226)"/>
+<text x="835.0" y="633.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">Wednesday</text>
+<rect x="850" y="612" width="18" height="32" fill="rgb(201,213,240)"/>
+<rect x="868" y="612" width="18" height="32" fill="rgb(221,230,248)"/>
+<rect x="886" y="612" width="18" height="32" fill="rgb(230,238,252)"/>
+<rect x="904" y="612" width="18" height="32" fill="rgb(235,242,253)"/>
+<rect x="922" y="612" width="18" height="32" fill="rgb(234,242,253)"/>
+<rect x="940" y="612" width="18" height="32" fill="rgb(225,234,250)"/>
+<rect x="958" y="612" width="18" height="32" fill="rgb(197,210,239)"/>
+<rect x="976" y="612" width="18" height="32" fill="rgb(143,163,218)"/>
+<rect x="994" y="612" width="18" height="32" fill="rgb(106,130,204)"/>
+<rect x="1012" y="612" width="18" height="32" fill="rgb(110,133,205)"/>
+<rect x="1030" y="612" width="18" height="32" fill="rgb(117,140,208)"/>
+<rect x="1048" y="612" width="18" height="32" fill="rgb(113,136,207)"/>
+<rect x="1066" y="612" width="18" height="32" fill="rgb(104,129,203)"/>
+<rect x="1084" y="612" width="18" height="32" fill="rgb(97,123,201)"/>
+<rect x="1102" y="612" width="18" height="32" fill="rgb(85,112,196)"/>
+<rect x="1120" y="612" width="18" height="32" fill="rgb(75,104,192)"/>
+<rect x="1138" y="612" width="18" height="32" fill="rgb(79,106,194)"/>
+<rect x="1156" y="612" width="18" height="32" fill="rgb(52,83,183)"/>
+<rect x="1174" y="612" width="18" height="32" fill="rgb(41,74,179)"/>
+<rect x="1192" y="612" width="18" height="32" fill="rgb(64,93,188)"/>
+<rect x="1210" y="612" width="18" height="32" fill="rgb(61,91,187)"/>
+<rect x="1228" y="612" width="18" height="32" fill="rgb(48,80,182)"/>
+<rect x="1246" y="612" width="18" height="32" fill="rgb(72,101,191)"/>
+<rect x="1264" y="612" width="18" height="32" fill="rgb(140,160,217)"/>
+<text x="835.0" y="665.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">Thursday</text>
+<rect x="850" y="644" width="18" height="32" fill="rgb(191,205,237)"/>
+<rect x="868" y="644" width="18" height="32" fill="rgb(220,229,248)"/>
+<rect x="886" y="644" width="18" height="32" fill="rgb(231,239,252)"/>
+<rect x="904" y="644" width="18" height="32" fill="rgb(235,243,253)"/>
+<rect x="922" y="644" width="18" height="32" fill="rgb(233,241,253)"/>
+<rect x="940" y="644" width="18" height="32" fill="rgb(222,231,249)"/>
+<rect x="958" y="644" width="18" height="32" fill="rgb(194,207,238)"/>
+<rect x="976" y="644" width="18" height="32" fill="rgb(141,161,218)"/>
+<rect x="994" y="644" width="18" height="32" fill="rgb(106,130,204)"/>
+<rect x="1012" y="644" width="18" height="32" fill="rgb(109,133,205)"/>
+<rect x="1030" y="644" width="18" height="32" fill="rgb(115,138,208)"/>
+<rect x="1048" y="644" width="18" height="32" fill="rgb(110,134,206)"/>
+<rect x="1066" y="644" width="18" height="32" fill="rgb(100,125,202)"/>
+<rect x="1084" y="644" width="18" height="32" fill="rgb(93,119,199)"/>
+<rect x="1102" y="644" width="18" height="32" fill="rgb(79,107,194)"/>
+<rect x="1120" y="644" width="18" height="32" fill="rgb(68,97,190)"/>
+<rect x="1138" y="644" width="18" height="32" fill="rgb(71,99,191)"/>
+<rect x="1156" y="644" width="18" height="32" fill="rgb(44,76,180)"/>
+<rect x="1174" y="644" width="18" height="32" fill="rgb(30,64,175)"/>
+<rect x="1192" y="644" width="18" height="32" fill="rgb(54,85,184)"/>
+<rect x="1210" y="644" width="18" height="32" fill="rgb(52,83,183)"/>
+<rect x="1228" y="644" width="18" height="32" fill="rgb(40,73,179)"/>
+<rect x="1246" y="644" width="18" height="32" fill="rgb(54,85,184)"/>
+<rect x="1264" y="644" width="18" height="32" fill="rgb(106,130,204)"/>
+<text x="835.0" y="697.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">Friday</text>
+<rect x="850" y="676" width="18" height="32" fill="rgb(161,178,225)"/>
+<rect x="868" y="676" width="18" height="32" fill="rgb(201,213,240)"/>
+<rect x="886" y="676" width="18" height="32" fill="rgb(220,229,248)"/>
+<rect x="904" y="676" width="18" height="32" fill="rgb(228,237,251)"/>
+<rect x="922" y="676" width="18" height="32" fill="rgb(228,237,251)"/>
+<rect x="940" y="676" width="18" height="32" fill="rgb(221,230,248)"/>
+<rect x="958" y="676" width="18" height="32" fill="rgb(198,211,239)"/>
+<rect x="976" y="676" width="18" height="32" fill="rgb(158,175,224)"/>
+<rect x="994" y="676" width="18" height="32" fill="rgb(132,153,214)"/>
+<rect x="1012" y="676" width="18" height="32" fill="rgb(132,153,214)"/>
+<rect x="1030" y="676" width="18" height="32" fill="rgb(126,148,212)"/>
+<rect x="1048" y="676" width="18" height="32" fill="rgb(119,142,209)"/>
+<rect x="1066" y="676" width="18" height="32" fill="rgb(107,131,204)"/>
+<rect x="1084" y="676" width="18" height="32" fill="rgb(100,125,202)"/>
+<rect x="1102" y="676" width="18" height="32" fill="rgb(82,109,195)"/>
+<rect x="1120" y="676" width="18" height="32" fill="rgb(74,102,192)"/>
+<rect x="1138" y="676" width="18" height="32" fill="rgb(83,110,195)"/>
+<rect x="1156" y="676" width="18" height="32" fill="rgb(64,94,188)"/>
+<rect x="1174" y="676" width="18" height="32" fill="rgb(51,82,183)"/>
+<rect x="1192" y="676" width="18" height="32" fill="rgb(63,93,188)"/>
+<rect x="1210" y="676" width="18" height="32" fill="rgb(79,107,194)"/>
+<rect x="1228" y="676" width="18" height="32" fill="rgb(80,108,194)"/>
+<rect x="1246" y="676" width="18" height="32" fill="rgb(66,95,189)"/>
+<rect x="1264" y="676" width="18" height="32" fill="rgb(63,93,188)"/>
+<text x="835.0" y="729.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">Saturday</text>
+<rect x="850" y="708" width="18" height="32" fill="rgb(84,111,196)"/>
+<rect x="868" y="708" width="18" height="32" fill="rgb(121,143,210)"/>
+<rect x="886" y="708" width="18" height="32" fill="rgb(157,174,223)"/>
+<rect x="904" y="708" width="18" height="32" fill="rgb(188,202,236)"/>
+<rect x="922" y="708" width="18" height="32" fill="rgb(211,221,244)"/>
+<rect x="940" y="708" width="18" height="32" fill="rgb(227,236,250)"/>
+<rect x="958" y="708" width="18" height="32" fill="rgb(220,230,248)"/>
+<rect x="976" y="708" width="18" height="32" fill="rgb(210,220,244)"/>
+<rect x="994" y="708" width="18" height="32" fill="rgb(189,203,236)"/>
+<rect x="1012" y="708" width="18" height="32" fill="rgb(161,178,225)"/>
+<rect x="1030" y="708" width="18" height="32" fill="rgb(136,156,216)"/>
+<rect x="1048" y="708" width="18" height="32" fill="rgb(116,139,208)"/>
+<rect x="1066" y="708" width="18" height="32" fill="rgb(100,125,202)"/>
+<rect x="1084" y="708" width="18" height="32" fill="rgb(88,115,197)"/>
+<rect x="1102" y="708" width="18" height="32" fill="rgb(87,114,197)"/>
+<rect x="1120" y="708" width="18" height="32" fill="rgb(80,108,194)"/>
+<rect x="1138" y="708" width="18" height="32" fill="rgb(68,97,189)"/>
+<rect x="1156" y="708" width="18" height="32" fill="rgb(58,88,186)"/>
+<rect x="1174" y="708" width="18" height="32" fill="rgb(45,77,181)"/>
+<rect x="1192" y="708" width="18" height="32" fill="rgb(46,78,181)"/>
+<rect x="1210" y="708" width="18" height="32" fill="rgb(77,105,193)"/>
+<rect x="1228" y="708" width="18" height="32" fill="rgb(75,103,192)"/>
+<rect x="1246" y="708" width="18" height="32" fill="rgb(51,82,183)"/>
+<rect x="1264" y="708" width="18" height="32" fill="rgb(44,76,180)"/>
+<text x="835.0" y="761.0" font-size="11" fill="#475569" font-weight="400" text-anchor="end">Sunday</text>
+<rect x="850" y="740" width="18" height="32" fill="rgb(68,97,190)"/>
+<rect x="868" y="740" width="18" height="32" fill="rgb(106,131,204)"/>
+<rect x="886" y="740" width="18" height="32" fill="rgb(148,167,220)"/>
+<rect x="904" y="740" width="18" height="32" fill="rgb(176,191,231)"/>
+<rect x="922" y="740" width="18" height="32" fill="rgb(201,213,240)"/>
+<rect x="940" y="740" width="18" height="32" fill="rgb(222,232,249)"/>
+<rect x="958" y="740" width="18" height="32" fill="rgb(218,228,247)"/>
+<rect x="976" y="740" width="18" height="32" fill="rgb(209,220,243)"/>
+<rect x="994" y="740" width="18" height="32" fill="rgb(193,206,238)"/>
+<rect x="1012" y="740" width="18" height="32" fill="rgb(165,182,227)"/>
+<rect x="1030" y="740" width="18" height="32" fill="rgb(137,157,216)"/>
+<rect x="1048" y="740" width="18" height="32" fill="rgb(120,142,209)"/>
+<rect x="1066" y="740" width="18" height="32" fill="rgb(105,129,204)"/>
+<rect x="1084" y="740" width="18" height="32" fill="rgb(98,123,201)"/>
+<rect x="1102" y="740" width="18" height="32" fill="rgb(94,120,199)"/>
+<rect x="1120" y="740" width="18" height="32" fill="rgb(100,125,202)"/>
+<rect x="1138" y="740" width="18" height="32" fill="rgb(97,122,201)"/>
+<rect x="1156" y="740" width="18" height="32" fill="rgb(91,117,198)"/>
+<rect x="1174" y="740" width="18" height="32" fill="rgb(94,120,199)"/>
+<rect x="1192" y="740" width="18" height="32" fill="rgb(117,140,208)"/>
+<rect x="1210" y="740" width="18" height="32" fill="rgb(127,148,212)"/>
+<rect x="1228" y="740" width="18" height="32" fill="rgb(130,151,213)"/>
+<rect x="1246" y="740" width="18" height="32" fill="rgb(145,164,219)"/>
+<rect x="1264" y="740" width="18" height="32" fill="rgb(172,188,229)"/>
+<text x="859.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">0</text>
+<text x="913.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">3</text>
+<text x="967.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">6</text>
+<text x="1021.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">9</text>
+<text x="1075.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">12</text>
+<text x="1129.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">15</text>
+<text x="1183.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">18</text>
+<text x="1237.0" y="795.0" font-size="10" fill="#475569" font-weight="400" text-anchor="middle">21</text>
+<text x="1066.0" y="820.0" font-size="12" fill="#475569" font-weight="600" text-anchor="middle">Pickup hour</text>
+<text x="60.0" y="872.0" font-size="11" fill="#475569" font-weight="400" text-anchor="start">Source: NYC Taxi &amp; Limousine Commission. Gross booking value is the sum of total_amount for accepted trips.</text>
+</svg>
