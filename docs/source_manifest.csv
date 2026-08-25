@@ -1,0 +1,7 @@
+month,url,raw_rows,file_bytes,last_modified_utc
+2025-01,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet,3475226,59158238,2025-04-23T16:31:58Z
+2025-02,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet,3577543,60343086,2025-04-23T16:16:58Z
+2025-03,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet,4145257,69964745,2025-05-21T15:29:16Z
+2025-04,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet,3970553,67352824,2025-06-25T14:52:12Z
+2025-05,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-05.parquet,4591845,77837865,2025-06-25T15:52:37Z
+2025-06,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet,4322960,73542954,2025-07-25T14:02:45Z

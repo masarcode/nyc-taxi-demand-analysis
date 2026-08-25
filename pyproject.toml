@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nyc-taxi-demand-analysis"
+version = "1.0.0"
+description = "Validated, row-group ETL and reporting pipeline for NYC Yellow Taxi data"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas>=2.1,<3.0",
+  "numpy>=1.26,<3.0",
+  "pyarrow>=14.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+cloud = ["google-cloud-bigquery>=3.25"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
